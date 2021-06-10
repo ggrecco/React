@@ -1,3 +1,5 @@
+
+
 const menu = {
     seletor: '.principal'
 }
@@ -46,7 +48,12 @@ const carro = {
     portas: 4
 }
 
-carroAno = {...carro, ano: 2021};
+const carroAno = {...carro, ano: 2021};
 
 console.log(carro);
 console.log(carroAno);
+
+import { areaQuadrado, perimetroQuadrado } from "./quadradro.js";
+
+console.log(areaQuadrado(5));
+console.log(perimetroQuadrado(6));
