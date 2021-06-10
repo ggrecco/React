@@ -1,5 +1,3 @@
-
-
 const menu = {
     seletor: '.principal'
 }
@@ -40,7 +38,7 @@ showList('Google', 'Gustavo', 'Karin', '123123');
 
 const numero = [10, 2, 20];
 const maior = Math.max(...numero);
-console.log(maior)
+console.log("N maior no Array: "+ maior)
 
 
 const carro = {
@@ -55,5 +53,10 @@ console.log(carroAno);
 
 import { areaQuadrado, perimetroQuadrado } from "./quadradro.js";
 
-console.log(areaQuadrado(5));
-console.log(perimetroQuadrado(6));
+console.log('Area quadrado: '+ areaQuadrado(5));
+console.log('Perimetro quadrado: '+ perimetroQuadrado(6));
+
+
+import areaTriangulo from "./triangulo.js";
+
+console.log('Area Triangulo: ' + areaTriangulo(10, 20));
