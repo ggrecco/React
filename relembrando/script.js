@@ -51,12 +51,11 @@ const carroAno = {...carro, ano: 2021};
 console.log(carro);
 console.log(carroAno);
 
-import { areaQuadrado, perimetroQuadrado } from "./quadradro.js";
 
-console.log('Area quadrado: '+ areaQuadrado(5));
-console.log('Perimetro quadrado: '+ perimetroQuadrado(6));
+import quadrado from "./quadradro.js";
+console.log('Area quadrado: '+ quadrado.areaQuadrado(5));
+console.log('Perimetro quadrado: '+ quadrado.perimetroQuadrado(6));
 
 
 import areaTriangulo from "./triangulo.js";
-
 console.log('Area Triangulo: ' + areaTriangulo(10, 20));
