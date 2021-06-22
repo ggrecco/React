@@ -1,3 +1,4 @@
+//exemplo de exportação 
 function areaQuadrado(l){
     return l * l;
 }
