@@ -19,3 +19,14 @@ console.log(larguraJanela);
 
 const h1 = document.querySelector('h1');
 h1.innerHTML = "<h1>Novo Titulo</h1>"
+
+
+//array
+let frutas = ['pera', 'abacaxi', 'abacate', 'bergamota', 'melancia', 'tomate']
+
+frutas.forEach((item) => {console.log('forEach: ' + item)});
+
+
+let i = frutas.length - 1;
+
+console.log("i: " + frutas[i]);
