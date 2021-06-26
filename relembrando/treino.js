@@ -54,3 +54,33 @@ const numeros = [1,2,3,4,5,6,7,8];
 const numerosX6 = numeros.map(n => n * 2).map(n => n * 3);
 
 console.log(numerosX6);
+
+const aulas = [
+    {
+        nome: 'HTML1',
+        min: 10
+    },
+    {
+        nome: 'HTML2',
+        min: 20
+    },
+    {
+        nome: 'JAVA',
+        min: 404
+    },
+    {
+        nome: 'PYTHON',
+        min: 4
+    },
+    {
+        nome: 'PHP',
+        min: 50
+    },
+]
+
+const aulaMin = aulas.map(aula => aula.min)
+const aulaNome= aulas.map(aula => aula.nome)
+console.log(aulaMin)
+console.log(aulaNome)
+
+//reduce para somar os itens de um array
