@@ -117,3 +117,37 @@ const maior15 = aulas.filter((aula) => {
 })
 
 console.log(maior15);
+
+
+//exercício
+// retornar o valor total de compras
+
+const compras = [
+    {
+        item: 'Banana',
+        preco: 'R$ 4,99'
+    },
+    {
+        item: 'Ovo',
+        preco: 'R$ 2,99'
+    },
+    {
+        item: 'Carne',
+        preco: 'R$ 25,49'
+    },
+    {
+        item: 'Refrigerante',
+        preco: 'R$ 5,35'
+    },
+    {
+        item: 'Queijo',
+        preco: 'R$ 10.60'
+    },
+]
+
+const totalCompras = compras.reduce((acumulador, item) => {
+    const precoLimpo = +item.preco.replace('R$ ', '').replace(',', '.');
+    return acumulador + precoLimpo;
+}, 0)
+
+console.log(totalCompras)
