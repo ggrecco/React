@@ -153,6 +153,13 @@
 // console.log(totalCompras)
 
 //calcular caracteres
-const olaMundo = document.querySelector('h1')
-
+const olaMundo = document.querySelector('h1');
 console.log(olaMundo.innerHTML.length);
+
+const todosOlaMundo = document.querySelectorAll('h1');
+const totalOlaMundo = Array.from(todosOlaMundo);
+
+console.log(totalOlaMundo.reduce((acumulador, item) => {
+    
+    return acumulador + item.innerText.length;
+},0));
