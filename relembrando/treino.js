@@ -100,3 +100,12 @@ const mairoValor = aulaMin.reduce((anterior, atual) => {
 })
 
 console.log(mairoValor);
+
+
+// objetos com reduce
+const listaAulas = aulas.reduce((acumulador, aula, index) => {
+    acumulador[index] = aula.nome;
+    return acumulador;
+}, {})//deve passar objeto vazio para não bugar o acumulador
+
+console.log(listaAulas);
