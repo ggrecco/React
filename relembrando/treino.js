@@ -43,111 +43,116 @@
 // carros.splice(2, 1, 'scort'); //remove o numero de itens indicado no segundo elemento
 // console.log(carros);
 
-//map
-const carros = ['fusca', 'uno', 'brasilia'];
-carros.map(item => {item});
+//// map
+// const carros = ['fusca', 'uno', 'brasilia'];
+// carros.map(item => {item});
 
-console.log(carros)
+// console.log(carros)
 
-const numeros = [1,2,3,4,5,6,7,8];
+// const numeros = [1,2,3,4,5,6,7,8];
 
-const numerosX6 = numeros.map(n => n * 2).map(n => n * 3);
+// const numerosX6 = numeros.map(n => n * 2).map(n => n * 3);
 
-console.log(numerosX6);
+// console.log(numerosX6);
 
-const aulas = [
-    {
-        nome: 'HTML1',
-        min: 10
-    },
-    {
-        nome: 'HTML2',
-        min: 20
-    },
-    {
-        nome: 'JAVA',
-        min: 404
-    },
-    {
-        nome: 'PYTHON',
-        min: 4
-    },
-    {
-        nome: 'PHP',
-        min: 50
-    },
-    {
-        nome: 'PHP',
-        min: 505
-    },
-]
+// const aulas = [
+//     {
+//         nome: 'HTML1',
+//         min: 10
+//     },
+//     {
+//         nome: 'HTML2',
+//         min: 20
+//     },
+//     {
+//         nome: 'JAVA',
+//         min: 404
+//     },
+//     {
+//         nome: 'PYTHON',
+//         min: 4
+//     },
+//     {
+//         nome: 'PHP',
+//         min: 50
+//     },
+//     {
+//         nome: 'PHP',
+//         min: 505
+//     },
+// ]
 
-const aulaMin = aulas.map(aula => aula.min)
-const aulaNome= aulas.map(aula => aula.nome)
-console.log(aulaMin)
-console.log(aulaNome)
+// const aulaMin = aulas.map(aula => aula.min)
+// const aulaNome= aulas.map(aula => aula.nome)
+// console.log(aulaMin)
+// console.log(aulaNome)
 
-//reduce para somar os itens de um array
-const somaAulaMin = aulaMin.reduce((acumulado, numero) => {
-                        return acumulado + numero 
-                    },0);
+// //reduce para somar os itens de um array
+// const somaAulaMin = aulaMin.reduce((acumulado, numero) => {
+//                         return acumulado + numero 
+//                     },0);
                     
-console.log(somaAulaMin)
+// console.log(somaAulaMin)
 
-//verificar maior valor
-const mairoValor = aulaMin.reduce((anterior, atual) => {
-    return anterior < atual ? atual : anterior;
-})
+// //verificar maior valor
+// const mairoValor = aulaMin.reduce((anterior, atual) => {
+//     return anterior < atual ? atual : anterior;
+// })
 
-console.log(mairoValor);
-
-
-// objetos com reduce
-const listaAulas = aulas.reduce((acumulador, aula, index) => {
-    acumulador[index] = aula.nome;
-    return acumulador;
-}, {})//deve passar objeto vazio para não bugar o acumulador
-
-console.log(listaAulas);
+// console.log(mairoValor);
 
 
-//filter
-const maior15 = aulas.filter((aula) => {
-    return aula.min > 25;
-})
+// // objetos com reduce
+// const listaAulas = aulas.reduce((acumulador, aula, index) => {
+//     acumulador[index] = aula.nome;
+//     return acumulador;
+// }, {})//deve passar objeto vazio para não bugar o acumulador
 
-console.log(maior15);
+// console.log(listaAulas);
 
 
-//exercício
-// retornar o valor total de compras
+// //filter
+// const maior15 = aulas.filter((aula) => {
+//     return aula.min > 25;
+// })
 
-const compras = [
-    {
-        item: 'Banana',
-        preco: 'R$ 4,99'
-    },
-    {
-        item: 'Ovo',
-        preco: 'R$ 2,99'
-    },
-    {
-        item: 'Carne',
-        preco: 'R$ 25,49'
-    },
-    {
-        item: 'Refrigerante',
-        preco: 'R$ 5,35'
-    },
-    {
-        item: 'Queijo',
-        preco: 'R$ 10.60'
-    },
-]
+// console.log(maior15);
 
-const totalCompras = compras.reduce((acumulador, item) => {
-    const precoLimpo = +item.preco.replace('R$ ', '').replace(',', '.');
-    return acumulador + precoLimpo;
-}, 0)
 
-console.log(totalCompras)
+// //exercício
+// // retornar o valor total de compras
+
+// const compras = [
+//     {
+//         item: 'Banana',
+//         preco: 'R$ 4,99'
+//     },
+//     {
+//         item: 'Ovo',
+//         preco: 'R$ 2,99'
+//     },
+//     {
+//         item: 'Carne',
+//         preco: 'R$ 25,49'
+//     },
+//     {
+//         item: 'Refrigerante',
+//         preco: 'R$ 5,35'
+//     },
+//     {
+//         item: 'Queijo',
+//         preco: 'R$ 10.60'
+//     },
+// ]
+
+// const totalCompras = compras.reduce((acumulador, item) => {
+//     const precoLimpo = +item.preco.replace('R$ ', '').replace(',', '.');
+//     return acumulador + precoLimpo;
+// }, 0)
+
+// console.log(totalCompras)
+
+//calcular caracteres
+const olaMundo = document.querySelector('h1')
+
+console.log(olaMundo.innerHTML.length);
