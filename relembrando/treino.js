@@ -84,3 +84,9 @@ console.log(aulaMin)
 console.log(aulaNome)
 
 //reduce para somar os itens de um array
+const somaAulaMin = aulaMin.reduce((acumulado, numero) => {
+                        return acumulado + numero 
+                    },0);
+                    
+console.log(somaAulaMin)
+
