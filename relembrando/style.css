@@ -59,7 +59,7 @@ body {
 }
 
 .manual-btn:hover {
-    background-color: blue;
+    background: greenyellow;
 }
 
 #radio1:checked~.first {
@@ -101,17 +101,17 @@ body {
 }
 
 #radio1:checked~.navigation-auto .auto-btn1 {
-    background-color: blue;
+    background: greenyellow;
 }
 
 #radio2:checked~.navigation-auto .auto-btn2 {
-    background-color: blue;
+    background: greenyellow;
 }
 
 #radio3:checked~.navigation-auto .auto-btn3 {
-    background-color: blue;
+    background: greenyellow;
 }
 
 #radio4:checked~.navigation-auto .auto-btn4 {
-    background-color: blue;
+    background: greenyellow;
 }
