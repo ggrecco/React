@@ -24,9 +24,21 @@ h1.innerHTML = "<h1>Novo Titulo</h1>"
 //array
 let frutas = ['pera', 'abacaxi', 'abacate', 'bergamota', 'melancia', 'tomate']
 
-frutas.forEach((item) => {console.log('forEach: ' + item)});
+//ordenando ordem alfabetica
+console.log(frutas.sort());
 
+frutas.forEach((item) => {console.log('forEach: ' + item)});
 
 let i = frutas.length - 1;
 
 console.log("i: " + frutas[i]);
+
+const a = 'up';
+const carros = ['fusca', 'uno', 'brasilia'];
+carros.unshift(a);
+carros.push(frutas);
+
+console.log(carros);
+
+carros.splice(2, 1, 'scort'); //remove o numero de itens indicado no segundo elemento
+console.log(carros);
