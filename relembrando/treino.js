@@ -76,10 +76,10 @@ const aulas = [
         nome: 'PHP',
         min: 50
     },
-    // {
-    //     nome: 'PHP',
-    //     min: 505
-    // },
+    {
+        nome: 'PHP',
+        min: 505
+    },
 ]
 
 const aulaMin = aulas.map(aula => aula.min)
@@ -109,3 +109,11 @@ const listaAulas = aulas.reduce((acumulador, aula, index) => {
 }, {})//deve passar objeto vazio para não bugar o acumulador
 
 console.log(listaAulas);
+
+
+//filter
+const maior15 = aulas.filter((aula) => {
+    return aula.min > 25;
+})
+
+console.log(maior15);
