@@ -158,8 +158,27 @@ console.log(olaMundo.innerHTML.length);
 
 const todosOlaMundo = document.querySelectorAll('h1');
 const totalOlaMundo = Array.from(todosOlaMundo);
-
-console.log(totalOlaMundo.reduce((acumulador, item) => {
-    
+const mostrarTotal = totalOlaMundo.reduce((acumulador, item) => {
     return acumulador + item.innerText.length;
-},0));
+    },0);
+console.log(mostrarTotal);
+console.log(todosOlaMundo);
+
+
+const totalOlaMundo2 = Array.prototype.reduce.call(todosOlaMundo, (acumulador, item) => {
+    return acumulador + item.innerText.length;
+    },0);
+console.log('total2: ' + totalOlaMundo2)
+
+
+
+//add tag,classe e conteudo
+function criarElemento(tag, classe, conteudo){
+    const elemento = document.createElement(tag);
+    classe ? elemento.classList.add(classe) : null;
+    conteudo ? elemento.innerHTML = conteudo : null;
+
+    return elemento;
+}
+
+console.log(criarElemento('ul', 'teste', 'aqui um conteudo legal'))
