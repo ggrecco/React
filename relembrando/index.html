@@ -1,20 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html dir="ltr">
 
 <head>
     <meta charset="utf-8">
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css">
 
     <head name="description" content="">
     </head>
 
+    <!-- treino -->
+    <!-- <h1 class="ativo" id="ativo">Olá Mundo!!!</h1> -->
+    <!-- <h1 class="ativo" id="ativo">Olá Mundo!!!</h1> -->
+    <!-- <h1 class="ativo" id="ativo">Olá Mundo!!!</h1> -->
+    <!-- <script type="module" src="./script.js" async defer></script> -->
+    <!-- <script type="module" src="./treino.js" async defer></script> -->
+    <!-- fim do treino -->
+
     <body>
-        <h1 class="ativo" id="ativo">Olá Mundo!!!</h1>
-        <h1 class="ativo" id="ativo">Olá Mundo!!!</h1>
-        <h1 class="ativo" id="ativo">Olá Mundo!!!</h1>
-        <!-- <script type="module" src="./script.js" async defer></script> -->
-        <script type="module" src="./treino.js" async defer></script>
+
+        <div class="slider">
+            <div class="slides">
+                <!-- radiobutton -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!-- imagens -->
+                <div class="slide first">
+                    <img src="./img/1.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/2.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/3.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/4.jpeg" alt=""></img>
+                </div>
+            </div>
+            <!-- navegacao auto -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!-- navegacao manual -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function() {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
     </body>
 
 </html>
