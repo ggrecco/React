@@ -1,44 +1,56 @@
-// retorne o url da página atual utilizando o objeto window
-// const url_atual = window.location.href;
-const url_atual = location.href;
-console.log(url_atual);
+// // retorne o url da página atual utilizando o objeto window
+// // const url_atual = window.location.href;
+// const url_atual = location.href;
+// console.log(url_atual);
 
-//Seleciona o primeiro elemento da página que possua a classe ativo
-// const elementoAtivo = document.querySelector("#ativo").innerHTML;
-const elementoAtivo = document.querySelector(".ativo");
-console.log(elementoAtivo);
+// //Seleciona o primeiro elemento da página que possua a classe ativo
+// // const elementoAtivo = document.querySelector("#ativo").innerHTML;
+// const elementoAtivo = document.querySelector(".ativo");
+// console.log(elementoAtivo);
 
-// Retorne a linguagem do navegador
-const linguaNavegador = navigator.language;
-console.log(linguaNavegador);
+// // Retorne a linguagem do navegador
+// const linguaNavegador = navigator.language;
+// console.log(linguaNavegador);
 
-// Retorne a largura da janela
-// const larguraJanela = window.innerWidth;
-const larguraJanela = innerWidth;
-console.log(larguraJanela);
+// // Retorne a largura da janela
+// // const larguraJanela = window.innerWidth;
+// const larguraJanela = innerWidth;
+// console.log(larguraJanela);
 
-const h1 = document.querySelector('h1');
-h1.innerHTML = "<h1>Novo Titulo</h1>"
+// const h1 = document.querySelector('h1');
+// h1.innerHTML = "<h1>Novo Titulo</h1>"
 
 
-//array
-let frutas = ['pera', 'abacaxi', 'abacate', 'bergamota', 'melancia', 'tomate']
+// //array
+// let frutas = ['pera', 'abacaxi', 'abacate', 'bergamota', 'melancia', 'tomate']
 
-//ordenando ordem alfabetica
-console.log(frutas.sort());
+// //ordenando ordem alfabetica
+// console.log(frutas.sort());
 
-frutas.forEach((item) => {console.log('forEach: ' + item)});
+// frutas.forEach((item, index) => {console.log('forEach: ' + item + ' index: ' + index)});
 
-let i = frutas.length - 1;
+// let i = frutas.length - 1;
 
-console.log("i: " + frutas[i]);
+// console.log("i: " + frutas[i]);
 
-const a = 'up';
+// const a = 'up';
+// const carros = ['fusca', 'uno', 'brasilia'];
+// carros.unshift(a);
+// carros.push(frutas);
+
+// console.log(carros);
+
+// carros.splice(2, 1, 'scort'); //remove o numero de itens indicado no segundo elemento
+// console.log(carros);
+
+//map
 const carros = ['fusca', 'uno', 'brasilia'];
-carros.unshift(a);
-carros.push(frutas);
+carros.map(item => {item});
 
-console.log(carros);
+console.log(carros)
 
-carros.splice(2, 1, 'scort'); //remove o numero de itens indicado no segundo elemento
-console.log(carros);
+const numeros = [1,2,3,4,5,6,7,8];
+
+const numerosX6 = numeros.map(n => n * 2).map(n => n * 3);
+
+console.log(numerosX6);
