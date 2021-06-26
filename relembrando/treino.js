@@ -76,6 +76,10 @@ const aulas = [
         nome: 'PHP',
         min: 50
     },
+    // {
+    //     nome: 'PHP',
+    //     min: 505
+    // },
 ]
 
 const aulaMin = aulas.map(aula => aula.min)
@@ -90,3 +94,9 @@ const somaAulaMin = aulaMin.reduce((acumulado, numero) => {
                     
 console.log(somaAulaMin)
 
+//verificar maior valor
+const mairoValor = aulaMin.reduce((anterior, atual) => {
+    return anterior < atual ? atual : anterior;
+})
+
+console.log(mairoValor);
