@@ -183,3 +183,33 @@
 
 // console.log(criarElemento('ul', 'teste', 'aqui um conteudo legal'))
 
+// // desetructuring
+
+// const cliente = {
+//     nome: 'Gustavo',
+//     compras: {
+//         digitais: {
+//             livros: ['livro 1', 'livro 2'],
+//             videos: ['video 1', 'video 2']
+//         },
+//         fisicas: {
+//             cadernos: ['Caderno 1']
+//         }
+//     }
+// }
+
+// const {digitais, fisicas, digitais: {livros, videos}} = cliente.compras;
+
+// const {nome: novoNome} = cliente
+
+// console.log(digitais)
+// console.log(livros)
+// console.log(novoNome)
+
+// destructuring event
+
+function hendleKeyboard(event){
+    console.log(event);
+}
+
+document.addEventListener('keyup', hendleKeyboard);
