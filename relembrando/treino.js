@@ -209,7 +209,7 @@
 // destructuring event
 
 function hendleKeyboard(event){
-    console.log(event);
+    console.log(event.key);
 }
 
 document.addEventListener('keyup', hendleKeyboard);
