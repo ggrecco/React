@@ -206,10 +206,11 @@
 // console.log(livros)
 // console.log(novoNome)
 
-// destructuring event
+// // destructuring event
 
-function hendleKeyboard(event){
-    console.log(event.key);
-}
+// function hendleKeyboard({key, view}){
+//     console.log(key);
+//     console.log(view);
+// }
 
-document.addEventListener('keyup', hendleKeyboard);
+// document.addEventListener('keyup', hendleKeyboard);
