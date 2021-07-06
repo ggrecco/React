@@ -209,7 +209,7 @@
 // // destructuring event
 
 // function hendleKeyboard({key, view}){
-//     console.log(key);
+//     console.log(key); 
 //     console.log(view);
 // }
 
